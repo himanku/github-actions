@@ -2,8 +2,8 @@ name: counter_app
 on: 
   push:
   pull_request: 
-    branches;
-      - main
+    branches:
+      - master
 
 jobs: 
   build:
@@ -27,7 +27,7 @@ jobs:
           name: production-files
           path: ./build
 
-          
+
   deploy:
     name: Deploy
     # The os to run the job on
